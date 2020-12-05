@@ -1,6 +1,6 @@
 /* negro: #222831 
 blanco: #eeeeee
-turquesa: #00ADB5
+turquesa: #00ADB5 (0, 173, 181)
 
 */
 
@@ -25,7 +25,8 @@ sans-serif;
 background-color: transparent;
 border-radius: 0%;
 border-color: #eeeeee;
-padding: 10px 30px;
+    padding: 20px 40px;
+    font-size: 2rem;
 
 }
 
@@ -37,10 +38,27 @@ padding: 10px 30px;
 }
 
 
+
+.btn-secondary {
+    background-color: rgba(30, 30, 30, 45%);
+    border-radius: 0%;
+    border-color: #eeeeee;
+    padding: 20px 40px;
+    font-size: 2rem;
+
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+    border-color: transparent;
+    background-color: rgba(0, 173, 181, 100%)
+}
+
 /* background */
 .bg-portada{
-    background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/portada.jpg");
-    background-position: 50% 40%;
+    background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/portada_desktop.jpg");
+    /* background-position: 50% 40%; */
     /* Center the image */
       background-repeat: no-repeat;
       /* Do not repeat the image */
@@ -57,6 +75,7 @@ padding: 10px 30px;
          background-repeat: no-repeat;
          /* Do not repeat the image */
          background-size: cover;
+         background-position: right;
          /* Resize the background image to cover the entire container */
 }
 .bg-categoria-2 {
@@ -64,16 +83,40 @@ padding: 10px 30px;
          background-repeat: no-repeat;
          /* Do not repeat the image */
          background-size: cover;
-         background-position: right;
+                background-position: right;
          /* Resize the background image to cover the entire container */
 }
 .bg-categoria-3 {
    background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/categoria_3_desktop.jpg");
          background-repeat: no-repeat;
+         background-position: center;
          /* Do not repeat the image */
          background-size: cover;
          /* Resize the background image to cover the entire container */
 }
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .bg-categoria-1{
+   background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/categoria_1_mobile.jpg");
+        background-position: center;
+
+    }
+.bg-categoria-2 {
+   background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/categoria_2_mobile.jpg");
+      background-position: center;
+
+}
+.bg-categoria-3 {
+   background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/categoria_3_mobile.jpg");
+
+}
+.bg-portada {
+    background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/portada_mobile.jpg");
+}
+}
+
+
+
 /* Espaciado */
 .padding-section{
     padding: 50vh;
@@ -81,6 +124,12 @@ padding: 10px 30px;
 .padding-portada{
     padding: 50vh 20vh
 }
+
+.separacion-secciones{
+height: 5vh;
+background-color: #222831 ;
+}
+
 
 /* Carrusel section */
 
