@@ -1,0 +1,89 @@
+/* negro: #222831 
+blanco: #eeeeee
+turquesa: #00ADB5
+
+*/
+
+
+*{
+    color: #eeeeee;
+}
+
+h1,h2,h4{
+    font-family: 'Bitter',
+    serif;
+}
+
+
+
+h3, p{
+    font-family: 'Raleway',
+sans-serif;
+}
+
+.btn-primary{
+background-color: transparent;
+border-radius: 0%;
+border-color: #eeeeee;
+padding: 10px 30px;
+
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus{
+    border-color: transparent;
+    background-color: #00ADB5;
+}
+
+
+/* background */
+.bg-portada{
+    background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/portada.jpg");
+    background-position: 50% 40%;
+    /* Center the image */
+      background-repeat: no-repeat;
+      /* Do not repeat the image */
+      background-size: cover;
+      /* Resize the background image to cover the entire container */
+}
+
+.bg-negro{
+    background-color: #222831;
+}
+
+.bg-categoria-1{
+   background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/categoria_1_desktop.jpg");
+         background-repeat: no-repeat;
+         /* Do not repeat the image */
+         background-size: cover;
+         /* Resize the background image to cover the entire container */
+}
+.bg-categoria-2 {
+   background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/categoria_2_desktop.jpg");
+         background-repeat: no-repeat;
+         /* Do not repeat the image */
+         background-size: cover;
+         background-position: right;
+         /* Resize the background image to cover the entire container */
+}
+.bg-categoria-3 {
+   background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/categoria_3_desktop.jpg");
+         background-repeat: no-repeat;
+         /* Do not repeat the image */
+         background-size: cover;
+         /* Resize the background image to cover the entire container */
+}
+/* Espaciado */
+.padding-section{
+    padding: 50vh;
+}
+.padding-portada{
+    padding: 50vh 20vh
+}
+
+/* Carrusel section */
+
+.flex-img{
+position: relative;
+}
