@@ -25,7 +25,7 @@ sans-serif;
 background-color: transparent;
 border-radius: 0%;
 border-color: #eeeeee;
-    padding: 20px 35px;
+    padding: 0.7rem 1.5rem;
     font-size: 1.5rem;
 
 }
@@ -43,7 +43,7 @@ border-color: #eeeeee;
     background-color: rgba(30, 30, 30, 45%);
     border-radius: 0%;
     border-color: #eeeeee;
-    padding: 20px 35px;
+    padding: 0.7rem 1.5rem;
     font-size: 1.5rem;
 
 }
@@ -56,12 +56,12 @@ border-color: #eeeeee;
 }
 
 /* background */
-.bg-negro{
+.bg-dark{
     background-color: #222831;
 }
 .bg-portada{
     background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/portada_desktop.jpg");
-    /* background-position: 50% 40%; */
+    background-position: 50% 40%;
     /* Center the image */
       background-repeat: no-repeat;
       /* Do not repeat the image */
@@ -95,10 +95,28 @@ border-color: #eeeeee;
          /* Resize the background image to cover the entire container */
 }
 
+.bg-quienSoy-a {
+
+   background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/quiensoy-desktop.jpg");
+   background-position: top right;
+         background-repeat: no-repeat;
+          background-size: cover;
+
+}
+
+.bg-quienSoy-b {
+   background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/quiensoy-desktop.jpg");
+      background-position: top right;
+             background-repeat: no-repeat;
+              background-size: cover;
+ 
+
+}
+
 @media (max-width: 768px) and (orientation: portrait) {
     .bg-categoria-1{
    background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/categoria_1_mobile.jpg");
-        background-position: center;
+        background-position: left;
 
     }
 .bg-categoria-2 {
@@ -108,21 +126,46 @@ border-color: #eeeeee;
 }
 .bg-categoria-3 {
    background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/categoria_3_mobile.jpg");
+    background-position: left;
 
 }
 .bg-portada {
     background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/portada_mobile.jpg");
 }
+
+.bg-quienSoy-a{ 
+      background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/quiensoy-a-mobile.jpg");
+
+      background-position: left;
+      /* Do not repeat the image */
+      background-size: cover;
+      /* Resize the background image to cover the entire container */
 }
+.bg-quienSoy-b {
+                background-image: url("https://storage.googleapis.com/gonzalo_lobos_bucket/quiensoy-b-mobile.jpg");
+         
+
+                background-position: right;
+                /* Do not repeat the image */
+                background-size: cover;
+                /* Resize the background image to cover the entire container */
+        }
+        
+    }
+        /* nav */
 
 
 
 /* Espaciado */
 .padding-section{
-    padding: 50vh 0;
+    padding: 30vh 0;
 }
 .padding-portada{
-    padding: 50vh 20vh
+    padding: 38vh 20vh
+}
+
+.padding-section-desarrolloWeb{
+    padding: 20vh 0;
 }
 
 .separacion-secciones{
@@ -130,6 +173,21 @@ height: 5vh;
 background-color: #222831 ;
 }
 
+.height-section{
+    height: 90vh;
+}
+
+.vertical-centred{
+    padding: 40vh 20% 0;
+
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+.vertical-centred {
+    padding: 28vh 20% 0;
+
+}
+}
 
 /* Carrusel section */
 
@@ -142,4 +200,16 @@ position: relative;
 .navbar{
 
     display: flex;
+}
+
+/* Form */
+.form-control {
+background-color: transparent;
+border-radius: 0%;
+border-color: #eeeeee;
+}
+
+.form-control:active,
+.form-control:focus {
+background-color: transparent;
 }

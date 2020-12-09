@@ -1,10 +1,6 @@
 <%- include('partials/header') %>
 
-
-<!-- NAV -->
-
-<%- include('partials/nav') %>
-
+<%# include('nav') %>
 
 <!-- PORTADA -->
 
@@ -27,9 +23,9 @@
 
 
 <!-- <div class="contacontaineriner padding-section"> -->
-<div class="text-center">
+<div class="text-center bg-negro ">
   <!-- Carrusel categorias -->
-  <div id="carouselExampleControls" class="carousel slide margin" data-ride="carousel">
+  <div id="carouselCategoria" class="carousel slide margin" data-bs-ride="carousel">
     <div class="carousel-inner ">
       <div class="carousel-item active bg-categoria-1 ">
         <div class="padding-section  ">
@@ -50,13 +46,11 @@
         </div>
       </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <a class="carousel-control-prev" href="#carouselCategoria" role="button" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
     </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <a class="carousel-control-next" href="#carouselCategoria" role="button" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
     </a>
   </div>
 
@@ -66,7 +60,69 @@
 
 <!-- </div> -->
 
-<div>
+
+<div class="bg-dark">
+
+  <!-- <img src="https://storage.googleapis.com/gonzalo_lobos_bucket/quiensoy-desktop.jpg" alt=""> -->
+
+
+  <div id="carouselQuienSoy" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselQuienSoy" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselQuienSoy" data-bs-slide-to="1"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active bg-quienSoy-a  height-section">
+        <div class="container vertical-centred ">
+          <h1>quien soy</h1>
+          <p>Soy Gonzalo, fotógrafo publicitario y he participado en proyectos de moda, productos y trabajo editorial
+            para distintas marcas. Estudié fotografía en Instituto Arcos y estoy actualmente tomando cursos de estética
+            para seguir especializándome. Además de trabajar freelance, trabajo como asistente de fotografía en estudio
+            Fe.</p>
+        </div>
+      </div>
+      <div class="carousel-item bg-quienSoy-b height-section">
+        <div class="container vertical-centred">
+          <p>Mi forma de trabajar se adapta segun las necesidades del cliente y las referencias que tenga en mente.A
+            partir de ese punto generamos un plan de trabajo para lograr que el trabajo sea satisfactorio segun la
+            estrategia trazada.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselQuienSoy" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a class="carousel-control-next" href="#carouselQuienSoy" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
+
+
 </div>
+
+
+
+
+
+
+
+
+
+<div class="bg-dark">
+  <div class="container text-center padding-section padding-section-desarrolloWeb">
+    <h1>desarrollo web</h1>
+    <p>Si tienes una marca o idea y deseas crear una pagina web pero no sabes como, no dudes en contactarme. Somos
+      Simple y Creativo.
+      Te puedo acompañar tanto en el proceso de desarrollo de marca, maquetación, creación de catálogo e imágenes
+      corporativas y desarrollo web.
+      Si quieres saber en detalle sobre nuestro trabajo, haz click en el siguiente link.</p>
+    <a href="http://simpleycreativo.cl"> <button type="button" class="btn btn-lg btn-primary"> Simple y Creativo.cl</button></a>
+
+  </div>
+</div>
+
+
+<%# include('form') %> 
+
 
 <%- include('partials/footer') %>
